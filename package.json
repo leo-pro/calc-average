@@ -1,0 +1,22 @@
+{
+  "name": "calc-average",
+  "version": "1.0.0",
+  "description": "Calculo de Média com Node JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leo-pro/calc-average.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leo-pro/calc-average/issues"
+  },
+  "homepage": "https://github.com/leo-pro/calc-average#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  }
+}
