@@ -1,10 +1,9 @@
 const readline = require('readline-sync')
 
 function start(res){
-
+    const aluno = {}
+    
     while(res == true){
-
-        const aluno = {}
 
         aluno.nome = getNome();
         aluno.idade = getIdade();
@@ -19,20 +18,22 @@ function start(res){
         }
 
         function calcularNotas(){
-            nota1 = readline.question("Informe a nota do 1 Bimestre: ");
-            nota2 = readline.question("Informe a nota do 2 Bimestre: ");
+            nota1 = readline.questionFloat("Informe a nota do 1 Bimestre: ");
+            nota2 = readline.questionFloat("Informe a nota do 2 Bimestre: ");
             return (nota1 + nota2) / 2;
         }
 
         console.log(aluno);
 
-        if(readline.keyInYN("Deseja calcular outra Média?")){
+        if(readline.keyInYN("Deseja calcular outra Media?")){
             res = true;
         }
         else{
             res = false;
         }
     }
+
+    console.log(aluno)
 }
 
 start(true)
